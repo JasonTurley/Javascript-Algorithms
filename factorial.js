@@ -13,8 +13,10 @@ function factorial(n) {
 
 // Function: recursive approach
 function factorialRecursive(n) {
+    // base case 
     if (n === 0 || n === 1) {
         return n;
     }
+    // Call function with n * (n-1) until n = 1
     return n * factorial(n - 1);
 }
